@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+img {
+    border: none;
+    vertical-align: middle;
+}
+img {
+    -ms-interpolation-mode: bicubic;
+}
+a{
+    color: #000;
+}
+#maincontent {
+    background: #000;
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    position: relative;
+    div{
+        .pict {
+            cursor: default !important;
+        }
+        .main {
+            position: static;
+            text-align: center;
+            display: block;
+            cursor: pointer !important
+        }
+    }
+    .element {
+        display: none;
+        position: absolute !important;
+    }
+    .left {
+        top : 200px;
+        left: 0;
+        cursor: pointer;
+        position: absolute;
+    }
+    .right {
+        top: 200px;
+        right: 0;
+        cursor: pointer;
+    }
+    .main {
+        .guardian {
+            display: none;
+            height: 0;
+        }
+    }
+}
+
+.bannerauto {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+div#maincontent div{
+    .main {
+        display: none;
+    }
+    .element {
+        position: absolute !important;
+    }
+}
+.s_title {
+    position: absolute;
+    width: 900px;
+}
+a.slide_title {
+    position: absolute;
+    top: -20px;
+    color: red;
+    font-size: 18px;
+}
+.maincontent_navi {
+    /*background: url(/vendor/images/maincontent_navi_bg.png) repeat;*/
+    /*width: 200px;*/
+    height: 16px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -100px;
+    background:rgba(0,0,0,0.2);
+    border-radius:10px;
+    ul {
+        /*width: 170px;*/
+        overflow: hidden;
+        /*margin: 5px 12px 0;*/
+    }
+    
+}
+.maincontent_navi_li {
+    width: 12px;
+    height: 12px;
+    display: block;
+    float: left;
+    margin:2px 6px;
+    background-color:#fff;
+    border-radius:50%;
+    /*background: url(/vendor/images/slide_dot.png) 0 -11px no-repeat;*/
+    
+}
+.maincontent_navi_selected, .maincontent_navi ul li:hover {
+    /*background: url(/vendor/images/slide_dot.png) 0 0 no-repeat;*/
+    background-color:#d00000;
+    border-radius:50%;
+}
