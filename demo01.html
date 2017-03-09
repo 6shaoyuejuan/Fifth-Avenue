@@ -242,9 +242,10 @@
 		})
 	</script>
 <div class="mainx_main">
+	
 	<div class="brandship_title">
 		<img src="img/mainx_brandship.png"/>
-	</div
+	</div>
 	
 <!--------------------------------名品店------------------------------->
 	<ul class="brandship_list">
@@ -1020,7 +1021,42 @@
 </div>
 	
 <!--------------------------------商场同款------------------------------->	
-
+	<script type="text/javascript">
+		$(function(){
+			$(".storesame_link li:first").css("background","#000");
+			$(".storesame_link li").mouseover(function(){
+				$(".storesame_link li").each(function(){
+					$(this).css("background","#999");
+				});
+				$(this).css("background","#000");
+				$('.storesame_box').stop().animate({'left':$(this).index()*parseInt($('.storesame_box li').css('width'))*-1});
+			});
+			$('.storesameb_top .storesame_top1').mouseover(function(){
+                $(this).find('.storesametoptxt').stop().animate({'left':'-20px'});
+                $(this).find('.storesametoppic').stop().animate({'left':'20px'});
+            });
+            $('.storesameb_top .storesame_top1').mouseout(function(){
+                $(this).find('.storesametoptxt').stop().animate({'left':'0'});
+                $(this).find('.storesametoppic').stop().animate({'left':'0'});
+            });
+            $('.storesameb_top .storesame_top2').mouseover(function(){
+                $(this).find('.storesametoptxt').stop().animate({'left':'-20px'});
+                $(this).find('.storesametoppic').stop().animate({'left':'20px'});
+            });
+            $('.storesameb_top .storesame_top2').mouseout(function(){
+                $(this).find('.storesametoptxt').stop().animate({'left':'0'});
+                $(this).find('.storesametoppic').stop().animate({'left':'0'});
+            });
+            $('.storesameb_bottom .storesamebottom1').mouseover(function(){
+                $(this).find('.storesametoptxt').stop().animate({'left':'-20px'});
+                $(this).find('.storesametoppic').stop().animate({'left':'20px'});
+            });
+            $('.storesameb_bottom .storesamebottom1').mouseout(function(){
+                $(this).find('.storesametoptxt').stop().animate({'left':'0'});
+                $(this).find('.storesametoppic').stop().animate({'left':'0'});
+            });
+		});
+	</script>
 	<div class="storesame_title">
 		<img src="img/storesametitle.jpg" style="display: block;">
 	</div>
@@ -1068,13 +1104,488 @@
 							</div>
 						</div>
 					</div>
+					<div class="storesameb_bottom">
+	                    <div class="storesamebottom1">
+	                        <div class="storesametoptxt" style="left: 0px;">
+	                                                        <p class="enbrand">Hermes </p>
+	                            <p>爱马仕</p>
+	                            <!-- <p>￥ 3020</p> -->
+	                                                            <p>￥ 3020</p>
+	                                                    </div>
+	                        <div class="storesametoppic" style="left: 0px;">
+	                            <a href="###" target="_blank">
+	                                <img src="img/a3.jpg" alt="绿色丛林图案丝绸女士丝巾" width="150">
+	                            </a>
+	                        </div>
+	                    </div>
+	                    <div class="storesamebottom1">
+	                        <div class="storesametoptxt" style="left: 0px;">
+	                                                        <p class="enbrand">Hermes </p>
+	                            <p>爱马仕</p>
+	                            <!-- <p>￥ 3020</p> -->
+	                                                            <p>￥ 3020</p>
+	                                                    </div>
+	                        <div class="storesametoppic" style="left: 0px;">
+	                            <a href="###" target="_blank">
+	                                <img src="img/a3.jpg" alt="米色鸟群图案丝绸女士丝巾" width="150">
+	                            </a>
+	                        </div>
+	                    </div>
+	                    <div class="storesamebottom1" style="margin-right:0;">
+	                        <div class="storesametoptxt" style="left: 0px;">
+	                                                        <p class="enbrand">Armani </p>
+	                            <p>阿玛尼</p>
+	                            <!-- <p>6￥ 1609</p> -->
+	                                                            <p>￥ 1609</p>
+	                                                    </div>
+	                        <div class="storesametoppic" style="left: 0px;">
+	                            <a href="###" target="_blank">
+	                                <img src="img/a3.jpg" alt="【包邮 免关税】ARMANI JEANS 牛仔裤 女" width="150">
+	                            </a>
+	                        </div>
+	                    </div>
+	                </div>
 				</div>
 			</li>
+			<li>
+				<div class="storesameb_left">
+					<img src="img/a.jpg" style="width: 368px;display: block;">
+				</div>
+				<div class="storesameb_right">
+					<div class="storesameb_top">
+						<div class="storesame_top1" style="margin-right: 8px;">
+							<div class="storesametoptxt" style="left: 0;">
+								<p class="enbrand">Talika</p>
+								<p>塔莉卡</p>
+								<p>￥ 280</p>
+							</div>
+							<div class="storesametoppic" style="left: 0;">
+								<img src="img/a1.jpg" width="150px">
+							</div>
+						</div>
+						<div class="storesame_top2">
+							<div class="storesametoptxt" style="left: 0;">
+								<p class="enbrand">Talika</p>
+								<p>塔莉卡</p>
+								<p>￥ 280</p>
+							</div>
+							<div class="storesametoppic storesametoppic2" style="left: 0;">
+								<img src="img/a2.jpg" width="180px">
+							</div>
+						</div>
+						<div class="storesame_top1">
+							<div class="storesametoptxt" style="left: 0;">
+								<p class="enbrand">Talika</p>
+								<p>塔莉卡</p>
+								<p>￥ 280</p>
+							</div>
+							<div class="storesametoppic" style="left: 0;">
+								<img src="img/a1.jpg" width="150px">
+							</div>
+						</div>
+					</div>
+					<div class="storesameb_bottom">
+	                    <div class="storesamebottom1">
+	                        <div class="storesametoptxt" style="left: 0px;">
+	                                                        <p class="enbrand">Hermes </p>
+	                            <p>爱马仕</p>
+	                            <!-- <p>￥ 3020</p> -->
+	                                                            <p>￥ 3020</p>
+	                                                    </div>
+	                        <div class="storesametoppic" style="left: 0px;">
+	                            <a href="###" target="_blank">
+	                                <img src="img/a3.jpg" alt="绿色丛林图案丝绸女士丝巾" width="150">
+	                            </a>
+	                        </div>
+	                    </div>
+	                    <div class="storesamebottom1">
+	                        <div class="storesametoptxt" style="left: 0px;">
+	                                                        <p class="enbrand">Hermes </p>
+	                            <p>爱马仕</p>
+	                            <!-- <p>￥ 3020</p> -->
+	                                                            <p>￥ 3020</p>
+	                                                    </div>
+	                        <div class="storesametoppic" style="left: 0px;">
+	                            <a href="###" target="_blank">
+	                                <img src="img/a3.jpg" alt="米色鸟群图案丝绸女士丝巾" width="150">
+	                            </a>
+	                        </div>
+	                    </div>
+	                    <div class="storesamebottom1" style="margin-right:0;">
+	                        <div class="storesametoptxt" style="left: 0px;">
+	                                                        <p class="enbrand">Armani </p>
+	                            <p>阿玛尼</p>
+	                            <!-- <p>6￥ 1609</p> -->
+	                                                            <p>￥ 1609</p>
+	                                                    </div>
+	                        <div class="storesametoppic" style="left: 0px;">
+	                            <a href="###" target="_blank">
+	                                <img src="img/a3.jpg" alt="【包邮 免关税】ARMANI JEANS 牛仔裤 女" width="150">
+	                            </a>
+	                        </div>
+	                    </div>
+	                </div>
+				</div>
+			</li>
+			<li>
+				<div class="storesameb_left">
+					<img src="img/a.jpg" style="width: 368px;display: block;">
+				</div>
+				<div class="storesameb_right">
+					<div class="storesameb_top">
+						<div class="storesame_top1" style="margin-right: 8px;">
+							<div class="storesametoptxt" style="left: 0;">
+								<p class="enbrand">Talika</p>
+								<p>塔莉卡</p>
+								<p>￥ 280</p>
+							</div>
+							<div class="storesametoppic" style="left: 0;">
+								<img src="img/a1.jpg" width="150px">
+							</div>
+						</div>
+						<div class="storesame_top2">
+							<div class="storesametoptxt" style="left: 0;">
+								<p class="enbrand">Talika</p>
+								<p>塔莉卡</p>
+								<p>￥ 280</p>
+							</div>
+							<div class="storesametoppic storesametoppic2" style="left: 0;">
+								<img src="img/a2.jpg" width="180px">
+							</div>
+						</div>
+						<div class="storesame_top1">
+							<div class="storesametoptxt" style="left: 0;">
+								<p class="enbrand">Talika</p>
+								<p>塔莉卡</p>
+								<p>￥ 280</p>
+							</div>
+							<div class="storesametoppic" style="left: 0;">
+								<img src="img/a1.jpg" width="150px">
+							</div>
+						</div>
+					</div>
+					<div class="storesameb_bottom">
+	                    <div class="storesamebottom1">
+	                        <div class="storesametoptxt" style="left: 0px;">
+	                                                        <p class="enbrand">Hermes </p>
+	                            <p>爱马仕</p>
+	                            <!-- <p>￥ 3020</p> -->
+	                                                            <p>￥ 3020</p>
+	                                                    </div>
+	                        <div class="storesametoppic" style="left: 0px;">
+	                            <a href="###" target="_blank">
+	                                <img src="img/a3.jpg" alt="绿色丛林图案丝绸女士丝巾" width="150">
+	                            </a>
+	                        </div>
+	                    </div>
+	                    <div class="storesamebottom1">
+	                        <div class="storesametoptxt" style="left: 0px;">
+	                                                        <p class="enbrand">Hermes </p>
+	                            <p>爱马仕</p>
+	                            <!-- <p>￥ 3020</p> -->
+	                                                            <p>￥ 3020</p>
+	                                                    </div>
+	                        <div class="storesametoppic" style="left: 0px;">
+	                            <a href="###" target="_blank">
+	                                <img src="img/a3.jpg" alt="米色鸟群图案丝绸女士丝巾" width="150">
+	                            </a>
+	                        </div>
+	                    </div>
+	                    <div class="storesamebottom1" style="margin-right:0;">
+	                        <div class="storesametoptxt" style="left: 0px;">
+	                                                        <p class="enbrand">Armani </p>
+	                            <p>阿玛尼</p>
+	                            <!-- <p>6￥ 1609</p> -->
+	                                                            <p>￥ 1609</p>
+	                                                    </div>
+	                        <div class="storesametoppic" style="left: 0px;">
+	                            <a href="###" target="_blank">
+	                                <img src="img/a3.jpg" alt="【包邮 免关税】ARMANI JEANS 牛仔裤 女" width="150">
+	                            </a>
+	                        </div>
+	                    </div>
+	                </div>
+				</div>
+		
+		
+		
 		</ul>
+	</div>
+
+<!---------------------------------购物中心------------------------------>	
+	
+	<script type="text/javascript">
+		$(function(){
+			$('.shopcenter li').mouseover(function(){
+                $(this).find('.shopcenterbox').stop().animate({'top':'-50px'});
+            });
+            $('.shopcenter li').mouseout(function(){
+                $(this).find('.shopcenterbox').stop().animate({'top':'0'});
+            });
+		});
+	</script>
 	
 	
+	<div><img src="img/shopcenter.jpg"/></div>
+	<ul class="shopcenter">
+		<li>
+			<div class="shopcenterbox" style="top:0px;">
+				<a href="javascript" class="quicktab" anchor="classic_bags">
+					<div class="topbox">经典包箱</div>
+				</a>
+				<a href="javascript" class="quicktab" anchor="classic_bags">
+					<div class="bottombox">
+						<div class="border">
+							<p>Classic bags</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+		<li>
+			<div class="shopcenterbox" style="top:0px;">
+				<a href="javascript" class="quicktab" anchor="classic_bags">
+					<div class="topbox">经典包箱</div>
+				</a>
+				<a href="javascript" class="quicktab" anchor="classic_bags">
+					<div class="bottombox">
+						<div class="border">
+							<p>Classic bags</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+		<li>
+			<div class="shopcenterbox" style="top:0px;">
+				<a href="javascript" class="quicktab" anchor="classic_bags">
+					<div class="topbox">经典包箱</div>
+				</a>
+				<a href="javascript" class="quicktab" anchor="classic_bags">
+					<div class="bottombox">
+						<div class="border">
+							<p>Classic bags</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+		<li>
+			<div class="shopcenterbox" style="top:0px;">
+				<a href="javascript" class="quicktab" anchor="classic_bags">
+					<div class="topbox">经典包箱</div>
+				</a>
+				<a href="javascript" class="quicktab" anchor="classic_bags">
+					<div class="bottombox">
+						<div class="border">
+							<p>Classic bags</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+		<li>
+			<div class="shopcenterbox" style="top:0px;">
+				<a href="javascript" class="quicktab" anchor="classic_bags">
+					<div class="topbox">经典包箱</div>
+				</a>
+				<a href="javascript" class="quicktab" anchor="classic_bags">
+					<div class="bottombox">
+						<div class="border">
+							<p>Classic bags</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</li>
+	</ul>
 	
-	
+<!-----------------------------------经典包箱---------------------------->
+
+	<a name="classic_bags" id="classic_bags"></a>
+	<div class="goodstitle">
+		<img src="img/goodtitle1.jpg" class="txt">
+		<div class="rightbtn">
+			<a href="###">
+				<span class="icon"></span>
+				<span class="moretxt">SHOW MORE</span>
+			</a>
+		</div>
+	</div>	
+	<div class="goods">
+    <div class="goods1">
+    
+    <ul class="goodslinks">
+            <li><a href="###" target="_blank">单肩包</a></li>
+            <li><a href="###" target="_blank">单肩包</a></li>
+            <li><a href="###" target="_blank">单肩包</a></li>
+            <li><a href="###" target="_blank">单肩包</a></li>
+            <li><a href="###" target="_blank">单肩包</a></li>
+            <li><a href="###" target="_blank">单肩包</a></li>
+            <li><a href="###" target="_blank">单肩包</a></li>
+            <li><a href="###" target="_blank">单肩包</a></li>
+            <li><a href="###" target="_blank">单肩包</a></li>
+            <li><a href="###" target="_blank">单肩包</a></li>
+    </ul>
+    
+    <div class="slider">
+        <div class="bx-wrapper" style="max-width: 100%;">
+        	<div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 114px;">
+        	<ul class="sliderbox bxslider" style="width: 515%; position: relative; -webkit-transition: 0s; transition: 0s; -webkit-transform: translate3d(-224px, 0, 0);">
+        		<li style="float: left;list-style: none; position: relative; width: 220px;" class="bx-clone">
+                	<a href="###" target="_blank">
+                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
+                    </a>
+                    <a href="###" target="_blank">
+                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
+                    </a>
+                    <a href="###" target="_blank">
+                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
+                    </a>
+                    <a href="###" target="_blank">
+                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
+                    </a>
+                										 
+            	</li>
+            	<li style="float: left;list-style: none; position: relative; width: 220px;" class="bx-clone">
+                	<a href="###" target="_blank">
+                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
+                    </a>
+                    <a href="###" target="_blank">
+                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
+                    </a>
+                    <a href="###" target="_blank">
+                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
+                    </a>
+                    <a href="###" target="_blank">
+                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
+                   </a>							 
+            	</li>
+            	<li style="float: left;list-style: none; position: relative; width: 220px;" class="bx-clone">
+                	<a href="###" target="_blank">
+                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
+                    </a>
+                    <a href="###" target="_blank">
+                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
+                    </a>
+                    <a href="###" target="_blank">
+                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
+                    </a>
+                    <a href="###" target="_blank">
+                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
+                    </a>
+                										 
+            	</li>
+        	</ul>
+        </div>
+        <div class="bx-controls bx-has-pager bx-has-controls-direction">
+        	<div class="bx-pager bx-default-pager">
+        		<div class="bx-pager-item">
+        			<a href="" data-slide-index="0" class="bx-pager-link active">1</a>
+        		</div>
+        		<div class="bx-pager-item">
+        			<a href="" data-slide-index="1" class="bx-pager-link">2</a>
+        		</div><div class="bx-pager-item">
+        			<a href="" data-slide-index="2" class="bx-pager-link">3</a>
+        		</div>
+        	</div>
+        	<div class="bx-controls-direction">
+        		<a class="bx-prev" href="">Prev</a>
+        		<a class="bx-next" href="">Next</a>
+        	</div>
+        </div>
+        </div>
+        </div>
+            </div>
+    <div class="goods2">
+               <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 370px;"><ul class="goods2slider bxslider" style="width: 315%; position: relative; -webkit-transition: 0s; transition: 0s; -webkit-transform: translate3d(-390px, 0, 0);"><li style="float: left; list-style: none; position: relative; width: 390px;" class="bx-clone">
+               <a href="http://www.5lux.com/brand/detail/36/4" target="_blank">
+                   <img src="/vendor/images/good_load.gif" class="loadimg" data-original="http://img550.5lux.com.cn/2017/03/07/st/148888433493_390x370.jpg" alt="Gucci古驰" height="370">
+               </a>
+               <div class="_slider_bord">
+                    <dl>
+                        <dd>Gucci古驰</dd>
+                        <dd><b></b></dd>
+                        <dd>不鸣则已 一鸣惊人</dd>
+                        <dt>华丽逆袭—连肩带都辣么美！</dt>
+                    </dl>
+                </div>
+           </li>
+                      <li style="float: left; list-style: none; position: relative; width: 390px;">
+               <a href="http://www.5lux.com/brand/detail/36/4" target="_blank">
+                   <img src="http://img550.5lux.com.cn/2017/03/07/st/148888433493_390x370.jpg" class="loadimg" data-original="http://img550.5lux.com.cn/2017/03/07/st/148888433493_390x370.jpg" alt="Gucci古驰" height="370" style="display: block;">
+               </a>
+               <div class="_slider_bord">
+                    <dl>
+                        <dd>Gucci古驰</dd>
+                        <dd><b></b></dd>
+                        <dd>不鸣则已 一鸣惊人</dd>
+                        <dt>华丽逆袭—连肩带都辣么美！</dt>
+                    </dl>
+                </div>
+           </li>
+                  <li style="float: left; list-style: none; position: relative; width: 390px;" class="bx-clone">
+               <a href="http://www.5lux.com/brand/detail/36/4" target="_blank">
+                   <img src="/vendor/images/good_load.gif" class="loadimg" data-original="http://img550.5lux.com.cn/2017/03/07/st/148888433493_390x370.jpg" alt="Gucci古驰" height="370">
+               </a>
+               <div class="_slider_bord">
+                    <dl>
+                        <dd>Gucci古驰</dd>
+                        <dd><b></b></dd>
+                        <dd>不鸣则已 一鸣惊人</dd>
+                        <dt>华丽逆袭—连肩带都辣么美！</dt>
+                    </dl>
+                </div>
+           </li></ul></div><div class="bx-controls bx-has-controls-direction"><div class="bx-controls-direction"><a class="bx-prev disabled" href="" style="left: -30px;">Prev</a><a class="bx-next disabled" href="" style="right: -30px;">Next</a></div></div></div>
+            </div>
+        <div class="goods3">
+              <div class="goods3pic1">
+          <a href="http://www.5lux.com/good/detail/60464" target="_blank">
+              <img src="http://img550.5lux.com.cn/2017/03/07/mn/148888660679_275x180.jpg" class="loadimg" data-original="http://img550.5lux.com.cn/2017/03/07/mn/148888660679_275x180.jpg" alt="Hermes爱马仕" width="275" style="display: inline;">
+          </a>
+      </div>
+              <div class="goods3pic2">
+          <a href="http://www.5lux.com/good/detail/1324625" target="_blank">
+              <img src="http://img550.5lux.com.cn/2017/03/07/uv/148888660674_275x180.jpg" class="loadimg" data-original="http://img550.5lux.com.cn/2017/03/07/uv/148888660674_275x180.jpg" alt="JINAMMI" width="275" style="display: inline;">
+          </a>
+      </div>
+              <div class="goods3pic1">
+          <a href="http://www.5lux.com/good/detail/295720" target="_blank">
+              <img src="http://img550.5lux.com.cn/2017/03/07/tu/148888660566_275x180.jpg" class="loadimg" data-original="http://img550.5lux.com.cn/2017/03/07/tu/148888660566_275x180.jpg" alt="Michael Kors/MK迈克.柯尔" width="275" style="display: inline;">
+          </a>
+      </div>
+              <div class="goods3pic2">
+          <a href="http://www.5lux.com/good/detail/182447" target="_blank">
+              <img src="http://img550.5lux.com.cn/2017/03/07/ef/148888660532_275x180.jpg" class="loadimg" data-original="http://img550.5lux.com.cn/2017/03/07/ef/148888660532_275x180.jpg" alt="Chloe克洛伊" width="275" style="display: inline;">
+          </a>
+      </div>
+            </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>	
+	
 	</body>
 </html>

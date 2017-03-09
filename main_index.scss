@@ -2,8 +2,8 @@ img {
     border: none;
     vertical-align: middle;
 }
-img {
-    -ms-interpolation-mode: bicubic;
+a{
+    color: #000;
 }
 .mainx_main{
     width: 1210px;
@@ -72,10 +72,11 @@ img {
         text-align: center;
     }
     .splitline .blackbar{
-        display: inline-block;
+        display: block;
         width: 20px;
         height: 2px;
         background: #000;
+        margin-left: 43px;
     }
 }
 .mainx_main .hotstore_title{
@@ -162,10 +163,14 @@ img {
     }
     
     .blacksline span{
-        display: inline-block;
+        display: block;
         width: 20px;
         height: 2px;
         background: #000;
+        margin-left: 43px;
+    }
+    :hover{
+        color: #c8a985;
     }
 }
 .hotflagbox .hotflagson img{
@@ -214,4 +219,206 @@ img {
     }
 }
 
-
+.storesame_link{
+    overflow: hidden;
+    margin-bottom: 15px;
+    li{
+        float: left;
+        width: 398px;
+        height: 30px;
+        background: #999;
+        color: #fff;
+        line-height: 30px;
+        text-align: center;
+        font-size: 14px;
+        margin-right: 8px;
+    }
+}
+.storesame{
+    overflow: hidden;
+    width: 100%;
+    height: 517px;
+    position: relative;
+    .storesame_box{
+        position: absolute;
+        left: 0;
+        width: 9999px;
+        li{
+            overflow: hidden;
+            float: left;
+            .storesameb_left{
+                float: left;
+            }
+            .storesameb_right{
+                float: left;
+                margin-left: 9px;
+                .storesameb_top{
+                    overflow: hidden;
+                    margin-bottom: 8px;
+                    .storesame_top1{
+                        width: 222px;
+                        height: 248px;
+                        text-align: center;
+                        border: solid 1px #ccc;
+                        overflow: hidden;
+                        float: left;
+                        .storesametoptxt{
+                            left: 0;
+                            font-size: 13px;
+                            color: #666;
+                            display: inline-block;
+                            position: relative;
+                            .enbrand{
+                                color: #000;
+                            }
+                        }
+                        .storesametoppic{
+                            text-align: center;
+                            position: relative;
+                            right: 0;
+                            
+                        }
+                    }
+                    .storesame_top2{
+                        width: 367px;
+                        height: 248px;
+                        float: left;
+                        margin-right: 7px;
+                        overflow: hidden;
+                        border: solid 1px #ccc;
+                        text-align: center;
+                        .storesametoptxt{
+                            font-size: 13px;
+                            margin-top: 20px;
+                            margin-left: 70px;
+                            color: #666;
+                            display: inline-block;
+                            position: relative;
+                            .enbrand{
+                                color: #000;
+                            }
+                        }
+                        .storesametoppic{
+                            float: left;
+                            position: relative;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+ .storesameb_bottom .storesamebottom1{
+    margin-right: 7px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 271px;
+    height: 255px;
+    overflow: hidden;
+}
+.storesamebottom1 .storesametoptxt{
+    text-align: center;
+    position: relative;
+}
+.storesamebottom1 .storesametoppic{
+    text-align: center;
+    position: relative;
+}
+.shopcenter{
+    width: 100%;
+    overflow: hidden;
+    li{
+        width: 234px;
+        height: 50px;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        margin-right: 8px;
+        .shopcenterbox{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 234px;
+            height: 100px;
+            .topbox{
+                width: 234px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                background: #999;
+                font-size: 14px;
+                color: #fff;
+            }
+            .bottombox{
+                width: 234px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                background: #333;
+                font-size: 14px;
+                color: #fff;
+                padding: 5px;
+                .border{
+                    border: solid 1px #fff;
+                    width: 223px;
+                    height: 40px;
+                    text-align: center;
+                    line-height:40px;
+                }
+            }
+        }
+    }
+}
+.goodstitle{
+    width: 100%;
+    overflow: hidden;
+    .txt{
+        float: left;
+    }
+    .rightbtn{
+        float: right;
+        overflow: hidden;
+        height: 60px;
+        line-height: 60px;
+        .moretxt{
+            float: left;
+            font-size: 16px;
+        }
+        .moretxt:hover{
+                color: #c8a985;
+            }
+        .icon{
+            float: right;
+            background: url(../img/share02.png) no-repeat -470px -360px;
+            width: 18px;
+            height: 60px;
+            margin-left: 6px;
+        }
+    }
+}
+.goods{
+    overflow: hidden;
+    .goods1{
+        float: left;
+        width: 220px;
+        height: 366px;
+        border: 1px solid #ccc;
+        padding: 0 9px;
+        padding-top: 4px;
+        margin-right: 8px;
+        .goodslinks{
+            overflow: hidden;
+            border-bottom: 1px dashed #d4d4d4;
+            padding-bottom: 16px;
+            li{
+                float: left;
+                line-height: 36px;
+                width: 110px;
+                font-size: 14px;
+                color: #666;
+                text-align: left;
+            }
+        }
+    }
+}
