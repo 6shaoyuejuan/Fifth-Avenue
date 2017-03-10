@@ -124,7 +124,7 @@
     	</div>
 		
 			
-<!------------                   导航条                    -------------------->
+<!------------------------------ 导航条     ------------------------------>
 		
 		<div class="nav" style="z-index:1;">
 	    <div class="v30_1210 v30_nvbox" style="position:relative;">
@@ -190,7 +190,7 @@
 	</div>
 	
 	
-<!-------------------        banner轮播图         ----------------------	-->
+<!--------------------------- banner轮播图    -------------------------->
 
 	<script src="js/autoplay.js"></script>
 	<div id="maincontent">
@@ -229,7 +229,7 @@
 <div class="maincontent_navi" style="margin-left: -72px;"><ul><li class="maincontent_navi_li maincontent_navi_selected" onmouseover="nextPage(1)"></li><li class="maincontent_navi_li" onmouseover="nextPage(2)"></li><li class="maincontent_navi_li" onmouseover="nextPage(3)"></li><li class="maincontent_navi_li" onmouseover="nextPage(4)"></li><li class="maincontent_navi_li" onmouseover="nextPage(5)"></li><li class="maincontent_navi_li" onmouseover="nextPage(6)"></li></ul></div>
 	</div>
 	
-<!--------------------------      热卖区          ---------------------- -->
+<!------------------------------ 热卖区  ------------------------------>
 	
 <script type="text/javascript">
 		$(function(){
@@ -1401,7 +1401,43 @@
 	</ul>
 	
 <!-----------------------------------经典包箱---------------------------->
-
+	
+	<script type="text/javascript">
+		$(function(){
+			$('.slider .sliderbox').bxSlider();
+			$('.goods2 .goods2slider').bxSlider({
+                pager:false
+            });
+            $('.goods2').mouseover(function(){
+                $(this).find('.bx-prev').stop().animate({'left':'0'});
+            });
+            $('.goods2').mouseout(function(){
+                $(this).find('.bx-prev').stop().animate({'left':'-30px'});
+            });
+            $('.goods2').mouseover(function(){
+                $(this).find('.bx-next').stop().animate({'right':'0'});
+            });
+            $('.goods2').mouseout(function(){
+                $(this).find('.bx-next').stop().animate({'right':'-30px'});
+            });
+            $('.goods2 .bx-prev').mouseover(function(){
+                $(this).css('background-position','-385px -370px');
+            });
+            $('.goods2 .bx-prev').mouseout(function(){
+                $(this).css('background-position','-299px -370px');
+            });
+            $('.goods2 .bx-next').mouseover(function(){
+                $(this).css('background-position','-422px -370px');
+            });
+            $('.goods2 .bx-next').mouseout(function(){
+                $(this).css('background-position','-338px -370px');
+            });
+		})
+	</script>
+	
+	
+	
+	
 	<a name="classic_bags" id="classic_bags"></a>
 	<div class="goodstitle">
 		<img src="img/goodtitle1.jpg" class="txt">
@@ -1412,95 +1448,123 @@
 			</a>
 		</div>
 	</div>	
+	
 	<div class="goods">
     <div class="goods1">
-    
-    <ul class="goodslinks">
-            <li><a href="###" target="_blank">单肩包</a></li>
-            <li><a href="###" target="_blank">单肩包</a></li>
-            <li><a href="###" target="_blank">单肩包</a></li>
-            <li><a href="###" target="_blank">单肩包</a></li>
-            <li><a href="###" target="_blank">单肩包</a></li>
-            <li><a href="###" target="_blank">单肩包</a></li>
-            <li><a href="###" target="_blank">单肩包</a></li>
-            <li><a href="###" target="_blank">单肩包</a></li>
-            <li><a href="###" target="_blank">单肩包</a></li>
-            <li><a href="###" target="_blank">单肩包</a></li>
-    </ul>
-    
-    <div class="slider">
-        <div class="bx-wrapper" style="max-width: 100%;">
-        	<div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 114px;">
-        	<ul class="sliderbox bxslider" style="width: 515%; position: relative; -webkit-transition: 0s; transition: 0s; -webkit-transform: translate3d(-224px, 0, 0);">
-        		<li style="float: left;list-style: none; position: relative; width: 220px;" class="bx-clone">
-                	<a href="###" target="_blank">
-                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
-                    </a>
-                    <a href="###" target="_blank">
-                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
-                    </a>
-                    <a href="###" target="_blank">
-                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
-                    </a>
-                    <a href="###" target="_blank">
-                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
-                    </a>
-                										 
-            	</li>
-            	<li style="float: left;list-style: none; position: relative; width: 220px;" class="bx-clone">
-                	<a href="###" target="_blank">
-                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
-                    </a>
-                    <a href="###" target="_blank">
-                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
-                    </a>
-                    <a href="###" target="_blank">
-                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
-                    </a>
-                    <a href="###" target="_blank">
-                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
-                   </a>							 
-            	</li>
-            	<li style="float: left;list-style: none; position: relative; width: 220px;" class="bx-clone">
-                	<a href="###" target="_blank">
-                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
-                    </a>
-                    <a href="###" target="_blank">
-                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
-                    </a>
-                    <a href="###" target="_blank">
-                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
-                    </a>
-                    <a href="###" target="_blank">
-                		<img src="img/02.png" alt="Miu Miu缪缪" width="107" height="54">
-                    </a>
-                										 
-            	</li>
-        	</ul>
-        </div>
-        <div class="bx-controls bx-has-pager bx-has-controls-direction">
-        	<div class="bx-pager bx-default-pager">
-        		<div class="bx-pager-item">
-        			<a href="" data-slide-index="0" class="bx-pager-link active">1</a>
-        		</div>
-        		<div class="bx-pager-item">
-        			<a href="" data-slide-index="1" class="bx-pager-link">2</a>
-        		</div><div class="bx-pager-item">
-        			<a href="" data-slide-index="2" class="bx-pager-link">3</a>
-        		</div>
-        	</div>
-        	<div class="bx-controls-direction">
-        		<a class="bx-prev" href="">Prev</a>
-        		<a class="bx-next" href="">Next</a>
-        	</div>
-        </div>
-        </div>
+                <ul class="goodslinks">
+                        <li><a href="###">单肩包</a></li>
+                        <li><a href="###">手提包</a></li>
+                        <li><a href="###">手提斜挎包</a></li>
+                        <li><a href="###">双肩包</a></li>
+                        <li><a href="###">手拿包</a></li>
+                        <li><a href="###">钱包</a></li>
+                        <li><a href="###">小皮件</a></li>
+                        <li><a href="###">旅行箱/包</a></li>
+                        <li><a href="###">斜挎包</a></li>
+                        <li><a href="###">化妆箱/包</a></li>
+                                </ul>
+                        <div class="slider">
+            <div class="bx-wrapper" style="max-width: 100%;">
+            	<div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 114px;">
+            		<ul class="sliderbox bxslider" style="width: 515%; position: relative; -webkit-transition: 0s; transition: 0s; -webkit-transform: translate3d(-224px, 0, 0);">
+            			<li style="float: left; list-style: none; position: relative; width: 220px;" class="bx-clone">
+                                                          <a href="###" target="_blank">
+                        <img src="img/06.png" alt="Miu Miu缪缪" width="107" height="54">
+                   </a>
+                                                          <a href="###" target="_blank">
+                        <img src="img/06.png" alt="Chloe克洛伊" width="107" height="54">
+                   </a>
+                                                          <a href="###" target="_blank">
+                        <img src="img/06.png" alt="Celine赛琳" width="107" height="54">
+                   </a>
+                                                          <a href="###" target="_blank">
+                        <img src="img/06.png" alt="Balenciaga巴黎世家" width="107" height="54">
+                   </a>
+                                                      </li>
+                <li style="float: left; list-style: none; position: relative; width: 220px;">
+                                       <a href="###" target="_blank">
+                        <img src="img/06.png" alt="Louis Vuitton/LV路易.威登" width="107" height="54">
+                   </a>
+                                                          <a href="###" target="_blank">
+                        <img src="img/06.png" alt="Chanel香奈儿" width="107" height="54">
+                   </a>
+                                                          <a href="###" target="_blank">
+                        <img src="img/06.png" alt="Hermes爱马仕" width="107" height="54">
+                   </a>
+                                                          <a href="###" target="_blank">
+                        <img src="img/06.png" alt="Gucci古驰" width="107" height="54">
+                   </a>
+                                       </li>
+                    <li style="float: left; list-style: none; position: relative; width: 220px;">
+                                                          <a href="###" target="_blank">
+                        <img src="img/06.png" alt="Burberry巴宝莉" width="107" height="54">
+                   </a>
+                                                          <a href="" target="_blank">
+                        <img src="img/06.png" alt="Coach蔻驰" width="107" height="54">
+                   </a>
+                                                          <a href="###" target="_blank">
+                        <img src="img/06.png" alt="Michael Kors/MK迈克.柯尔" width="107" height="54">
+                   </a>
+                                                          <a href="###" target="_blank">
+                        <img src="img/06.png" alt="Prada普拉达" width="107" height="54">
+                   </a>
+                                       </li>
+                    <li style="float: left; list-style: none; position: relative; width: 220px;">
+                                                          <a href="###" target="_blank">
+                        <img src="img/06.png" alt="Miu Miu缪缪" width="107" height="54">
+                   </a>
+                                                          <a href="###" target="_blank">
+                        <img src="img/06.png" alt="Chloe克洛伊" width="107" height="54">
+                   </a>
+                                                          <a href="###" target="_blank">
+                        <img src="img/06.png" alt="Celine赛琳" width="107" height="54">
+                   </a>
+                                                          <a href="###" target="_blank">
+                        <img src="img/06.png" alt="Balenciaga巴黎世家" width="107" height="54">
+                   </a>
+                                                      </li>
+            <li style="float: left; list-style: none; position: relative; width: 220px;" class="bx-clone">
+                                       <a href="###" target="_blank">
+                        <img src="img/06.png" alt="Louis Vuitton/LV路易.威登" width="107" height="54">
+                   </a>
+                                                          <a href="###" target="_blank">
+                        <img src="img/06.png" alt="Chanel香奈儿" width="107" height="54">
+                   </a>
+                                                          <a href="###" target="_blank">
+                        <img src="img/06.png" alt="Hermes爱马仕" width="107" height="54">
+                   </a>
+                                                          <a href="###" target="_blank">
+                        <img src="img/06.png" alt="Gucci古驰" width="107" height="54">
+                   </a>
+                                       </li>
+            		</ul>
+            	</div>
+            	<div class="bx-controls bx-has-pager bx-has-controls-direction">
+            		<div class="bx-pager bx-default-pager">
+            			<div class="bx-pager-item">
+            				<a href="" data-slide-index="0" class="bx-pager-link active">1</a>
+            			</div>
+            			<div class="bx-pager-item">
+            				<a href="" data-slide-index="1" class="bx-pager-link">2</a>
+            			</div><div class="bx-pager-item">
+            				<a href="" data-slide-index="2" class="bx-pager-link">3</a>
+            			</div>
+            		</div>
+            		<div class="bx-controls-direction">
+            			<a class="bx-prev" href="">Prev</a>
+            			<a class="bx-next" href="">Next</a>
+            		</div>
+            	</div>
+            </div>
         </div>
             </div>
     <div class="goods2">
-               <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 370px;"><ul class="goods2slider bxslider" style="width: 315%; position: relative; -webkit-transition: 0s; transition: 0s; -webkit-transform: translate3d(-390px, 0, 0);"><li style="float: left; list-style: none; position: relative; width: 390px;" class="bx-clone">
-               <a href="http://www.5lux.com/brand/detail/36/4" target="_blank">
-                   <img src="/vendor/images/good_load.gif" class="loadimg" data-original="http://img550.5lux.com.cn/2017/03/07/st/148888433493_390x370.jpg" alt="Gucci古驰" height="370">
+               <div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
+               	<div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 370px;">
+               		<ul class="goods2slider bxslider" style="width: 315%; position: relative; -webkit-transition: 0s; transition: 0s; -webkit-transform: translate3d(-390px, 0, 0);">
+               			<li style="float: left; list-style: none; position: relative; width: 390px;" class="bx-clone">
+               <a href="###" target="_blank">
+                   <img src="img/good_load.gif" class="loadimg" alt="Gucci古驰" height="370">
                </a>
                <div class="_slider_bord">
                     <dl>
@@ -1512,8 +1576,8 @@
                 </div>
            </li>
                       <li style="float: left; list-style: none; position: relative; width: 390px;">
-               <a href="http://www.5lux.com/brand/detail/36/4" target="_blank">
-                   <img src="http://img550.5lux.com.cn/2017/03/07/st/148888433493_390x370.jpg" class="loadimg" data-original="http://img550.5lux.com.cn/2017/03/07/st/148888433493_390x370.jpg" alt="Gucci古驰" height="370" style="display: block;">
+               <a href="###">
+                   <img src="img/04.jpg" class="loadimg"alt="Gucci古驰" height="370" style="display: block;">
                </a>
                <div class="_slider_bord">
                     <dl>
@@ -1525,8 +1589,8 @@
                 </div>
            </li>
                   <li style="float: left; list-style: none; position: relative; width: 390px;" class="bx-clone">
-               <a href="http://www.5lux.com/brand/detail/36/4" target="_blank">
-                   <img src="/vendor/images/good_load.gif" class="loadimg" data-original="http://img550.5lux.com.cn/2017/03/07/st/148888433493_390x370.jpg" alt="Gucci古驰" height="370">
+               <a href="###">
+                   <img src="img/good_load.gif" class="loadimg" alt="Gucci古驰" height="370">
                </a>
                <div class="_slider_bord">
                     <dl>
@@ -1536,56 +1600,281 @@
                         <dt>华丽逆袭—连肩带都辣么美！</dt>
                     </dl>
                 </div>
-           </li></ul></div><div class="bx-controls bx-has-controls-direction"><div class="bx-controls-direction"><a class="bx-prev disabled" href="" style="left: -30px;">Prev</a><a class="bx-next disabled" href="" style="right: -30px;">Next</a></div></div></div>
+           </li>
+               </ul>
+               </div>
+               <div class="bx-controls bx-has-controls-direction">
+           	<div class="bx-controls-direction">
+           		<a class="bx-prev disabled" href="" style="left: -30px;">Prev</a>
+           		<a class="bx-next disabled" href="" style="right: -30px;">Next</a>
+           	</div>
+           </div>
+               </div>
             </div>
         <div class="goods3">
               <div class="goods3pic1">
-          <a href="http://www.5lux.com/good/detail/60464" target="_blank">
-              <img src="http://img550.5lux.com.cn/2017/03/07/mn/148888660679_275x180.jpg" class="loadimg" data-original="http://img550.5lux.com.cn/2017/03/07/mn/148888660679_275x180.jpg" alt="Hermes爱马仕" width="275" style="display: inline;">
+          <a href="###">
+              <img src="img/a5.jpg" class="loadimg" alt="Gucci古驰" width="275" style="display: inline;">
+          
           </a>
       </div>
               <div class="goods3pic2">
-          <a href="http://www.5lux.com/good/detail/1324625" target="_blank">
-              <img src="http://img550.5lux.com.cn/2017/03/07/uv/148888660674_275x180.jpg" class="loadimg" data-original="http://img550.5lux.com.cn/2017/03/07/uv/148888660674_275x180.jpg" alt="JINAMMI" width="275" style="display: inline;">
+          <a href="###">
+              <img src="img/a5.jpg" class="loadimg"  alt="Fendi芬迪" width="275" style="display: inline;">
           </a>
       </div>
               <div class="goods3pic1">
-          <a href="http://www.5lux.com/good/detail/295720" target="_blank">
-              <img src="http://img550.5lux.com.cn/2017/03/07/tu/148888660566_275x180.jpg" class="loadimg" data-original="http://img550.5lux.com.cn/2017/03/07/tu/148888660566_275x180.jpg" alt="Michael Kors/MK迈克.柯尔" width="275" style="display: inline;">
+          <a href="###">
+              <img src="img/a5.jpg" class="loadimg"  alt="Michael Kors/MK迈克.柯尔" width="275" style="display: inline;">
           </a>
       </div>
               <div class="goods3pic2">
-          <a href="http://www.5lux.com/good/detail/182447" target="_blank">
-              <img src="http://img550.5lux.com.cn/2017/03/07/ef/148888660532_275x180.jpg" class="loadimg" data-original="http://img550.5lux.com.cn/2017/03/07/ef/148888660532_275x180.jpg" alt="Chloe克洛伊" width="275" style="display: inline;">
+          <a href="###">
+              <img src="img/a5.jpg" class="loadimg" alt="Celine赛琳" width="275" style="display: inline;">
           </a>
       </div>
             </div>
 </div>
+<!--------------------------------主题活动------------------------------->
 
+	<div class="promotiontitle">
+		<img src="img/promotiontitle.jpg"/>
+	</div>
+	
+	<div class="promotionbox">
+        <div class="promotion1">
+        <div class="promotion1pic pro1pic1">
+            <img src="img/a6.jpg"/>
+        </div>
+        <div class="promotion1pic pro1pic2">
+            <img src="img/a7.jpg"/>
+        </div>
+        <div class="promotion1pic">
+           <img src="img/a9.jpg"/>
+        </div>
+    </div>
+    <div class="promotion2">
+        <div class="promotion1pic pro1pic2">
+           <img src="img/a10.jpg"/>
+        </div>
+        <div class="promotion1pic pro1pic2">
+            <img src="img/a8.jpg"/>
+        </div>
+        <div class="promotion1pic">
+            <img src="img/a11.jpg"/>
+        </div>
+    </div>
+        <div class="promotion3">
+        <div class="proleft">
+            <div class="proleftpic">
+               <div class="proleftpicbox">
+                        <img src="img/2promotionpic.jpg">
+                    <div class="topline"></div>
+                    <div class="rightline"></div>
+                    <div class="bottomline"></div>
+                    <div class="leftline"></div>
+               </div>
+            </div>
+            <div class="proleftpic">
+               <div class="proleftpicbox">
+                        <img src="img/2promotionpic.jpg">
+                    <div class="topline"></div>
+                    <div class="rightline"></div>
+                    <div class="bottomline"></div>
+                    <div class="leftline"></div>
+               </div>
+            </div>
+            <div class="proleftpic">
+               <div class="proleftpicbox">
+                        <img src="img/2promotionpic.jpg">
+                    <div class="topline"></div>
+                    <div class="rightline"></div>
+                    <div class="bottomline"></div>
+                    <div class="leftline"></div>
+               </div>
+            </div>
+            <div class="proleftpic">
+               <div class="proleftpicbox">
+                        <img src="img/2promotionpic.jpg">
+                    <div class="topline"></div>
+                    <div class="rightline"></div>
+                    <div class="bottomline"></div>
+                    <div class="leftline"></div>
+               </div>
+            </div>
+            <div class="proleftpic">
+               <div class="proleftpicbox">
+                        <img src="img/2promotionpic.jpg">
+                    <div class="topline"></div>
+                    <div class="rightline"></div>
+                    <div class="bottomline"></div>
+                    <div class="leftline"></div>
+               </div>
+            </div>
+            <div class="proleftpic">
+               <div class="proleftpicbox">
+                        <img src="img/2promotionpic.jpg">
+                    <div class="topline"></div>
+                    <div class="rightline"></div>
+                    <div class="bottomline"></div>
+                    <div class="leftline"></div>
+               </div>
+            </div>
+            
+        </div>
+        <div class="proright">
+            <img src="img/1bank.jpg"/>
+        </div>
+    </div>
+</div>
+	<script type="text/javascript">
+		$(function(){
+			$('.proleftpic .proleftpicbox').mouseover(function(){
+                $(this).find('.topline').stop().animate({'width':'192px'},300);
+                $(this).find('.rightline').stop().animate({'height':'63px'},300);
+                $(this).find('.bottomline').stop().animate({'width':'192px'},300);
+                $(this).find('.leftline').stop().animate({'height':'63px'},300);
+            });
+            $('.proleftpic .proleftpicbox').mouseout(function(){
+                $(this).find('.topline').stop().animate({'width':'0'},300);
+                $(this).find('.rightline').stop().animate({'height':'0'},300);
+                $(this).find('.bottomline').stop().animate({'width':'0'},300);
+                $(this).find('.leftline').stop().animate({'height':'0'},300);
+            });
+		})
+	</script>
 
+</div>
 
+<!-------------------------------footer-------------------------------->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>	
+<div id="footer_message_bg">
+        <div id="footer_message">
+            <div class="footer_message_top">
+                <ul>
+                    <li class="footer_message_top01">
+                        <a href="###" target="_blank"><img src="img/footer_message01.jpg"></a>
+                        <div class="footer_message_top01_r">
+                            <p class="p1">正品保障</p>
+                            <p class="p2"><a href="###" target="_blank">品牌授权,官方验真</a></p>
+                        </div>
+                    </li>
+                    <li class="footer_message_top01">
+                        <a href="###" target="_blank"><img src="img/footer_message01.jpg"></a>
+                        <div class="footer_message_top01_r">
+                            <p class="p1">专柜发货</p>
+                            <p class="p2"><a href="###" target="_blank">专柜直接或到店自提</a></p>
+                        </div>
+                    </li>
+                    <li class="footer_message_top01">
+                        <a href="###" target="_blank"><img src="img/footer_message01.jpg"></a>
+                        <div class="footer_message_top01_r">
+                            <p class="p1">无忧售后</p>
+                            <p class="p2"><a href="###" target="_blank">7天无理由退换货</a></p>
+                        </div>
+                    </li>
+                    <li class="footer_message_top01">
+                        <a href="###"><img src="img/footer_message01.jpg"></a>
+                        <div class="footer_message_top01_r">
+                            <p class="p1">VIP服务</p>
+                            <p class="p2"><a href="###">享品牌会员售前售后服务</a></p>
+                        </div>
+                    </li>
+                    <li class="footer_message_top01">
+                        <a href="###"><img src="img/footer_message01.jpg"></a>
+                        <div class="footer_message_top01_r">
+                            <p class="p1">权威荣誉</p>
+                            <p class="p2"><a href="###">商务部授予诚信示范企业</a></p>
+                        </div>
+                    </li>                              
+                </ul>
+            </div>
+            <div class="footer_message_ctr">
+                <div class="footer_message_ctr_l">
+                    <ul style="padding-left: 20px;">
+                        <li>
+                            <span class="sp01">服务保障</span>
+                            <span><a href="###" target="_blank">品牌授权正品</a></span>
+                            <span><a href="###" target="_blank">品牌客服</a></span>
+                            <span><a href="###" target="_blank">预约到店体验</a></span>
+                            <span><a href="###" target="_blank">7天无理由退换</a></span>
+                        </li>
+                        <li>
+                            <span class="sp01">使用帮助</span>
+                            <span><a href="###" target="_blank">常见问题</a></span>
+                            <span><a href="###" target="_blank">会员制度</a></span>
+                            <span><a href="###" target="_blank">集团采购</a></span>
+                            <span><a href="###" target="_blank">礼品卡</a></span>
+                        </li>
+                        <li>
+                            <span class="sp01">支付方式</span>
+                            <span><a href="" target="_blank">到店付款</a></span>
+                            <span><a href="###" target="_blank">货到付款</a></span>
+                            <span><a href="###" target="_blank">在线支付</a></span>
+                            <span><a href="###" target="_blank">余额支付</a></span>
+                            <span><a href="###" target="_blank">分期付款</a></span>
+                        </li>
+                        <li>
+                            <span class="sp01">配送方式</span>
+                            <span><a href="###" target="_blank">配送说明</a></span>
+                            <span><a href="###" target="_blank">专柜自提</a></span>
+                            <span><a href="###" target="_blank">运费说明</a></span>
+                            <span><a href="###" target="_blank">验货签收</a></span>
+                        </li>
+                        <li>
+                            <span class="sp01">售后服务</span>
+                            <span><a href="###" target="_blank">品牌售后</a></span>
+                            <span><a href="###" target="_blank">售后咨询</a></span>
+                            <span><a href="###" target="_blank">退换政策</a></span>
+                            <span><a href="###" target="_blank">发票保障</a></span>
+                        </li>
+                        <li class="pht_app">
+                            <span class="sp01">尚奢品APP</span>
+                            <span><img src="img/footer_message06.jpg"></span>
+                        </li>
+                        <li class="pht_weibo">
+                            <span class="sp01">尚奢品微博</span>
+                            <span><img src="img/footer_message07.jpg"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_message_btm">
+                <div class="footer_message_btm_t">
+                    <a href="###">箱包</a> 丨
+                    <a href="###">美妆</a> 丨
+                    <a href="###">服饰</a> 丨
+                    <a href="###">腕表</a> 丨
+                    <a href="###">配饰</a> 丨
+                    <a href="###">鞋靴</a> 丨
+                    <a href="###">特惠</a> 丨
+                    <a href="###">礼品区</a>
+                </div>
+                <div>
+                    <a href="###">关于尚奢品</a> 丨
+                    <a href="###">网站地图</a> 丨
+                    <a href="###">品牌合作专区</a> 丨
+                    <a href="###">媒体聚焦</a> 
+                    <a href="###">商务合作</a> 丨
+                    <a href="###">商家合作</a> 丨
+                    <a href="###">加入尚奢品</a> 丨
+                    <a href="###">友情链接</a> 丨
+                    <a href="###">奢尚志</a> 丨
+                    <a href="###">联系我们</a> 丨
+                    <a href="###">投诉建议</a>
+                    <p>Copyright © 2008-2016 瑞美嘉信国际信息技术（北京）有限公司&nbsp; 版权所有京ICP备09012701号-1
+                       京公网安备110105007400号 食品经营许可证号：
+                    </p>
+                </div>
+                <div class="footer_message_btm_b">
+                    <a href="###"><img src="img/footer_message09.jpg"></a>
+                    <a href="###"><img src="img/footer_message10.jpg"></a>
+                    <a href="###"><img src="img/footer_message11.jpg"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+	
 	
 	</body>
 </html>
